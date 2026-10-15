@@ -1,4 +1,4 @@
-# FoundationPose ROS2 - ZED2
+# 6D_POSE_FoundationPose_ROS2
 
 Interactive object pose estimation using **ZED2 RGB-D → SAM 2.1 masks → FoundationPose → ROS TF → RViz meshes**. Includes a RealSense entry point and an optional ArUco calibration helper.
 
@@ -10,8 +10,8 @@ Baseline: Ubuntu 22.04, ROS 2 Humble, Python 3.10, an NVIDIA GPU and a compatibl
 2. Clone this project and create the environment:
 
 ```bash
-git clone https://github.com/mrrahul011/FoundationPose_ROS2_Zed.git
-cd FoundationPose_ROS2_Zed
+git clone https://github.com/mrrahul011/6D_POSE_FoundationPose_ROS2.git
+cd 6D_POSE_FoundationPose_ROS2
 conda create -n foundationpose_ros python=3.10 -y
 conda activate foundationpose_ros
 sudo apt install build-essential cmake libeigen3-dev libboost-all-dev python3-tk \
@@ -45,7 +45,7 @@ These extension commands are a candidate setup, not a validated lockfile. The op
 - **Objects:** place your OBJ/STL meshes and associated materials/textures under `demo_data/`. Mesh units must be metres and filenames must be unique. Use simple underscore-separated names for compatibility with the RViz helper.
 
 ```text
-FoundationPose_ROS2_Zed/
+6D_POSE_FoundationPose_ROS2/
 ├── sam2.1_b.pt
 ├── FoundationPose/
 │   └── weights/
