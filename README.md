@@ -1,4 +1,4 @@
-# FoundationPose ROS2 — ZED2
+# FoundationPose ROS2 - ZED2
 
 Interactive object pose estimation using **ZED2 RGB-D → SAM 2.1 masks → FoundationPose → ROS TF → RViz meshes**. Includes a RealSense entry point and an optional ArUco calibration helper.
 
@@ -58,9 +58,9 @@ FoundationPose_ROS2_Zed/
 
 Weights, datasets, recordings, assets, and Docker files are excluded from Git.
 
-## Run — three screens
+## Run - three screens
 
-### Screen 1 — ZED2 camera
+### Screen 1 - ZED2 camera
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -68,7 +68,7 @@ source /opt/ros/humble/setup.bash
 ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2
 ```
 
-### Screens 2 and 3 — activate Conda and ROS
+### Screens 2 and 3 - activate Conda and ROS
 
 Run this setup in **both** terminals. The last line is the original machine's path; replace it with your clone directory on another machine.
 
@@ -80,7 +80,7 @@ export PATH=/usr/local/cuda-12.6/bin${PATH:+:${PATH}}
 cd /home/rahul/Desktop/Robin/FoundationPoseROS2
 ```
 
-**Screen 2 — pose estimation**
+**Screen 2 - pose estimation**
 
 ```bash
 python foundationpose_ros_zed2_v1_5.py
@@ -88,7 +88,7 @@ python foundationpose_ros_zed2_v1_5.py
 
 Use the GUI to order meshes and follow the image-window prompts for segmentation and pose estimation. A desktop display is required.
 
-**Screen 3 — publish RViz meshes**
+**Screen 3 - publish RViz meshes**
 
 ```bash
 python rviz_marker_v3.py
